@@ -1,0 +1,11 @@
+RUN ON POWERSHELL : /Path/To/capa.exe /Path/To/Filename
+
+HELP : capa -h
+
+VERBOSE IN JSON FILE  : 
+
+    /Path/To/capa.exe -j -v /Path/To/Filename >  File.json
+    /Path/To/capa.exe -vv /Path/To/Filename > File.json
+
+CAPA WEB EXPLORER TO VIEW JASON FILE ABOVE : https://mandiant.github.io/capa/explorer/#/
+

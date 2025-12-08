@@ -1,0 +1,19 @@
+SNORT FILES : /etc/snort/
+
+
+CREATE RULE : local.rules
+
+    DEFAULT IP AND PORT = any
+
+    alert Protocol_Name IP_Source Port_source -> Our_IP Our_Port (msg:"Message to alert";sid:Signature_ID;rev:Revision_number)
+
+
+RULE TESTING :
+
+    sudo snort -q -l /var/log/snort -i LoopBack_Interface -A console -c /etc/snort/snort.conf
+    
+
+PCAP FILES SNORT :
+
+    sudo snort -q -l /var/log/snort -r /Path/To/Filename.pcap -A console -c /etc/snort/snort.conf
+

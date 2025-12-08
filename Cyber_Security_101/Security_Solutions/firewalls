@@ -1,0 +1,16 @@
+UNCOMPLICATED FIRE WALL :
+
+    CHECK STATUS : ufw status
+
+    ENABLE FIREWALL : ufw enable
+
+    DISABLE FIREWALL : ufw disable
+
+    ALLOW ALL OUTGOING CONNECTIONS : sudo ufw default allow outgoing
+
+    DENY INCOMING TRAFFIC AT A PORT : sudo ufw deny Port_Num/Protocol_Name
+
+    LIST ACTIVE RULES IN ORDER : sudo ufw status numbered
+
+    DELETE A RULE : sudo ufw delete Rule_Number
+    

@@ -1,0 +1,25 @@
+CONFIGURE INETSIM : 
+
+    LOCATION : /etc/inetsim/inetsim.conf
+
+    MODIFY LINE : dns_default_ip Machine_Address
+
+RUN : sudo inetsim
+
+ON ATTACKBOX : 
+
+    Site : https://Machine_Address
+
+
+VOLATILITY 3 : 
+
+    for plugin in windows.malfind.Malfind windows.psscan.PsScan windows.pstree.PsTree windows.pslist.PsList windows.cmdline.CmdLine windows.filescan.FileScan windows.dlllist.DllList; do vol3 -q -f wcry.mem $plugin > wcry.$plugin.txt; done
+
+
+PROCESSING STRINGS : 
+
+    strings wcry.mem > wcry.strings.ascii.txt
+
+    strings -1 l wcry.mem > wcry.strings.unicode_little_endian.txt
+
+    strings -b l wcry.mem > wcry.strings.unicode_big_endian.txt

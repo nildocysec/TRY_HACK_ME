@@ -1,0 +1,25 @@
+COLLECTION : 
+    
+    FORENSIC IMAGES : disk image and memory image
+
+    TOOLS USED : 
+        
+        ftk imager 
+
+        autopsy
+
+        volatility
+
+        dumpit
+
+
+DISPLAY PDF FILE METADATA : pdfinfo FileName.pdf
+
+    INSTALL : sudo apt install poppler-utils
+
+    
+DISPLAY IMAGE FILE METADATA : exiftool Image.jpg OR Image.jpeg 
+
+    INSTALL : sudo apt install libimage-exiftool-perl
+
+
