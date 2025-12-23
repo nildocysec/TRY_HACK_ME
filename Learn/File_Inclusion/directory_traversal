@@ -1,6 +1,0 @@
-CAUSE : functions like get_file_contents in PHP
-
-DOT DOT SLASH :
-
-    URL/FunctionName.php?Parameter=../../Till_Reach_Root/Path/To/Sensitive_data_File
-
