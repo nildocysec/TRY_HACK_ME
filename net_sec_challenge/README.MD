@@ -1,4 +1,3 @@
-```markdown
 # Net Sec Challenge - Questions & Commands
 
 ## Questions
