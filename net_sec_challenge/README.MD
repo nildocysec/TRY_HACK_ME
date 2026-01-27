@@ -1,4 +1,4 @@
-# Net Sec Challenge - Questions & Commands
+# Net Sec Challenge - Questions & Answers
 
 ## Questions
 
