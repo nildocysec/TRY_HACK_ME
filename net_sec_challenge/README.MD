@@ -51,14 +51,3 @@
    ```bash
    nmap -sN Target_IP -v
    ```
-```
-
-Copy everything **between** the two ```markdown:disable-run
-
-This version:
-- Removes all specific IP addresses
-- Replaces them consistently with `Target_IP`
-- Uses clean, uniform formatting
-- Has consistent indentation and spacing
-- Is ready for GitHub (Markdown will render nicely)
-```
