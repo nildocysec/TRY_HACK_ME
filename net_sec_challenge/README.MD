@@ -1,6 +1,6 @@
-# Net Sec Challenge - Questions & Answers
+# Net Sec Challenge
 
-## Questions
+##  Questions & Answers
 
 1. What is the highest port number being open less than 10,000?  
    ```bash
